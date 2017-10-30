@@ -20,7 +20,10 @@ public class TriangleTest {
         triangle = new Triangle("T27", "Master", "T2", 250, 290, "Titanium");
 
     }
-
+    @Test
+    public void canGetBrand(){
+        assertEquals("Master", triangle.getBrand());
+    }
 
     @Test
     public void canCalcMarkup(){

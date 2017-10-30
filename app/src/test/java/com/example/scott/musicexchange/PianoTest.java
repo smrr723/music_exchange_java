@@ -23,6 +23,10 @@ public class PianoTest {
         assertEquals("Harper 255", piano.getName());
     }
     @Test
+    public void canGetBrand(){
+        assertEquals("Deluxe", piano.getBrand());
+    }
+    @Test
     public void canCalcMarkup(){
         assertEquals(4000, piano.calculateMarkup(), 0.01);
     }

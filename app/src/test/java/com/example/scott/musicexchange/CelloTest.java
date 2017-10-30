@@ -20,9 +20,19 @@ public class CelloTest {
     }
 
     @Test
+    public void canPlay(){
+        assertEquals("Mmmmmm", cello.play());
+    }
+
+    @Test
     public void canGetName(){
         assertEquals("Winchester 1000", cello.getName());
     }
+    @Test
+    public void canGetBrand(){
+        assertEquals("Five Span", cello.getBrand());
+    }
+
     @Test
     public void canCalcMarkup(){
         assertEquals(1000, cello.calculateMarkup(), 0.01);
