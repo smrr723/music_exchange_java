@@ -23,6 +23,10 @@ public class CelloTest {
     public void canGetName(){
         assertEquals("Winchester 1000", cello.getName());
     }
+    @Test
+    public void canCalcMarkup(){
+        assertEquals(1000, cello.calculateMarkup(), 0.01);
+    }
 }
 
 

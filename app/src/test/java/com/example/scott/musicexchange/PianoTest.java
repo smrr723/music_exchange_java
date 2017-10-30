@@ -22,4 +22,8 @@ public class PianoTest {
     public void canGetName(){
         assertEquals("Harper 255", piano.getName());
     }
+    @Test
+    public void canCalcMarkup(){
+        assertEquals(4000, piano.calculateMarkup(), 0.01);
+    }
 }
